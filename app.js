@@ -13,12 +13,12 @@ client.on('message', message => {
           //(message.content === 'ping') will only respond to "ping" in chat
           //message.content.startsWith('ping') will reply to any message that starts with "ping"
         message.channel.sendMessage('pong');
+        }
           //message.reply responds in channel with @username
           //message.channel.sendMessage responds in channel with regular message
         if (message.content.startsWith(prefix + 'brommi')) {
         message.channel.sendMessage('Wat ein noob!');
         }
-    }
 });
 
 client.login(settings.token);
