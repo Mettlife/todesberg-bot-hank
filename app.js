@@ -25,9 +25,9 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.author === client.user) return;
-  if(message.content.startsWith(config.prefix)) {
+  if(message.content.startsWith(prefix + 'trump')) {
     let tag = 'trump'
-    if giphy.random('gifs', {tag})
+    if giphy.random('trump', {tag})
         .then((res) => {
           // console.log(res);
           message.channel.send(res.data.url);
