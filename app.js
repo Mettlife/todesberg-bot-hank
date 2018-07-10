@@ -20,6 +20,9 @@ client.on('message', message => {
     if (message.content.startsWith(prefix + 'brommi')) {
     message.channel.sendMessage('Wat ein noob!');
     }
+    if (message.content.startsWith(prefix + 'help')) {
+    message.channel.sendMessage('Try the following commands: $ping and $brommi');
+    }
 });
 
 client.login(settings.token);
