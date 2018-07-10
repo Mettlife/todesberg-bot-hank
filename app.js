@@ -22,7 +22,7 @@ client.on('message', message => {
     message.channel.sendMessage('Wat ein noob!');
     }
 });
-
+/*
 client.on('message', message => {
   if (message.author === client.user) return;
   if(message.content.startsWith(prefix + 'trump')) {
@@ -34,5 +34,5 @@ client.on('message', message => {
         })
   }
 });
-
+*/
 client.login(settings.token);
