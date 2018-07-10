@@ -16,7 +16,7 @@ client.on('message', message => {
           //message.reply responds in channel with @username
           //message.channel.sendMessage responds in channel with regular message
         if (message.content.startsWith(prefix + 'brommi')) {
-        message.channel.sendMessage('Wat ein noob!')
+        message.channel.sendMessage('Wat ein noob!');
         }
     }
 });
